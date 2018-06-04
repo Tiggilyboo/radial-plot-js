@@ -25,7 +25,6 @@ var RadialPlot = function(options){
   };
   this.options.axis = this.options.axis || [];
 };
-
 RadialPlot.prototype.render = function(legends, axis){
   this.options.axis = this.options.axis || axis;
   this.options.legends = this.options.legends || legends;
