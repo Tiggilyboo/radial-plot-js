@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radial Plot</title>
+  </head>
+  <body>
+    <h1>Radial Plot JS</h1> 
+    <canvas id="radial" width="800" height="500"></canvas>
+    <p>
+      Plot data around a circle, with configurable axis', scales, legends and styles.
+    </p>
+    <script src="radial.js"></script>
+    <script async defer>
+      let r = new RadialPlot({
+        legends: ["Data Set 1", "Data Set 2", "Another Data Set", "Mysterious"],
+        axis: [
+          new RadialPlotAxis("Chicken", 0, 20, [4, 13, 6, 8, 12]),
+          new RadialPlotAxis("Beef", 0, 50, [4, 13, 6, 8, 12]),
+          new RadialPlotAxis("Tortilini", 0, 35, [10, 11, 15, 12, 11]),
+          new RadialPlotAxis("Crumpets", 0, 100, [54, 57, 32, 85, 72]),
+          new RadialPlotAxis("Trampolines", 0, 100, [63, 51, 39, 53, 17]),
+          new RadialPlotAxis("Keyboards", 0, 100, [59, 64, 45, 99, 79]),
+          new RadialPlotAxis("Vegitables", 0, 100, [13, 5, 45, 89, 100]),
+        ],
+      });
+      r.render();
+    </script>
+  </body>
+</html>
