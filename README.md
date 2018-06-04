@@ -7,7 +7,7 @@ Plot data around a circle, with configurable axis', scales, legends and styles.
 
 ## How To
 
-Add the script to you <head></head> via: <script src="radial.min.js"></script>
+Add the script to your `<head></head>` via: `<script src="radial.min.js"></script>`
 
 Add you plot configuration
 ```javascript
